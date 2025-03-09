@@ -1,0 +1,44 @@
+body {
+    background-color: black;
+}
+.list-cliente {
+    
+    display: flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.containe {
+    display: flex;
+    background-color: rgb(65, 60, 60);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50vw; 
+    height: 100%;
+    
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.campo ul {
+    padding-left: 20px;
+}
+.containe a {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 800px) { 
+    .containe {
+        width: 95vw;
+       
+    }
+}

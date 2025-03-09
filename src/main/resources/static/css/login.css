@@ -1,0 +1,47 @@
+.form-login {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    height: 100vh;
+    background-color: #B56A16;
+    color: white;
+}
+
+.containe {
+    min-width: 90vw;
+    height: 80vh;
+    align-items: center;
+    background-color: #161c14;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 5px;
+    
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.btn-padrão {
+    
+    color: #A8A8A8;
+    background-color: transparent;
+    border-radius: 5px;
+    padding: 8px 2%;
+    border-width: 1px;
+    border-style: solid;
+    font-size:clamp(1.5rem, 0.5vw, 1rem);
+    text-decoration: none;
+    transition: background-color .3s ease ;
+    border-color: #A8A8A8;
+   
+}
+.link  {
+    padding: 10px;
+    color: #ffffff;
+}

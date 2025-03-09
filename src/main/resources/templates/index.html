@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CumaruForms</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{/css/login.css}">
+</head>
+<body>
+    <section class="form-login">
+
+        <div class="containe">
+            <h1>Projeto Base</h1>
+            <p th:if="${loginError}" class="error">Wrong user or password</p>
+            <p th:if="${param.success == true}">Cadastrado com Sucesso!</p>
+            <form class="form" th:action="@{/loginProcess}" method="post">
+                <label for="username">Login:</label>
+                <input class="btn-padrão" type="text" id="username" name="username" autofocus="autofocus"/><br/>
+                <label for="password">Senha:</label>
+                <input class="btn-padrão" type="password" name="password" id="password"/><br/>
+                <input class="btn-padrão" type="submit" value="Entrar"/>
+            </form>
+            <a href="/registrar"></a>
+    
+        </div>
+    </section>
+</body>
+</html>

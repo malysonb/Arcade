@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterar Usuário</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}">
+    <link rel="stylesheet" th:href="@{/css/login.css}">
+</head>
+<body>
+    <section class="form-login">
+        <div class="containe">
+            <h1>Alterar Usuário</h1>
+            <form class="form" th:action="@{/alterarUser/{id}(id=${@loginService.user.id})}" th:object="${user}" method="post">
+                <label for="nome">Nome: </label>
+                <input class="btn-padrão" type="text" th:field="*{nome}"/><br/>
+                <label for="username">Login: </label>
+                <input class="btn-padrão" type="text" id="username" name="username" th:field="*{login}" autofocus="autofocus"/><br/>
+                <label for="email">e-Mail: </label>
+                <input class="btn-padrão" type="email" name="email" id="email" th:field="*{email}"><br/>
+                <label for="password">Senha: </label>
+                <input class="btn-padrão" type="password" name="password" id="password" th:field="*{senha}"/><br/>
+                <input class="btn-padrão" type="submit" value="Alterar"/>
+            </form>
+            <a class="link" href="#" onclick="history.go(-1)">Voltar</a>
+        </div>
+    </section>
+</body>
+</html>

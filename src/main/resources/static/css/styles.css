@@ -1,0 +1,128 @@
+body {
+    background-color: #1a1a1a;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1vh;
+    width: 100%;
+    /*max-width: 900px;*/
+    /*height: 480px;*/
+}
+
+.container {
+    text-align: center;
+    padding: 2vh;
+    background-color: #333333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.start-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 32px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.start-button:hover {
+    background-color: #45a049;
+}
+
+.game-container {
+    width: auto;
+    height: auto;
+    max-width: 75vw;
+    max-height: 480px;
+    /*min-width: 854px;
+    min-height: 480px;*/
+    aspect-ratio: 16 / 9;
+    display: block;
+    margin-top: 20px;
+    background-color: #000;
+    border: 2px solid #4CAF50;
+    border-radius: 10px;
+}
+
+.game-container.fullscreen {
+    border: none;
+    border-radius: 0;
+}
+
+@media (max-width: 768px) {
+    /*.main-container {
+        transform: rotate(90deg);
+        transform-origin: center center;
+        width: 100vh;
+        height: 100vw;
+        overflow: hidden;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+
+    .game-container {
+        width: auto;
+        height: auto;
+        max-height: 85vw;
+        max-width: 85vh;
+        min-width: 854px;
+        min-height: 480px;
+        aspect-ratio: 16 / 9;
+        display: block;
+        margin-top: 20px;
+        background-color: #000;
+        border: 2px solid #4CAF50;
+        border-radius: 10px;
+    }*/
+
+    .game-container {
+        width: auto;
+        height: auto;
+        max-width: 98vw;
+        max-height: 85vh;
+        /*min-width: 854px;
+        min-height: 480px;*/
+        aspect-ratio: 16 / 9;
+        display: block;
+        margin-top: 20px;
+        background-color: #000;
+        border: 2px solid #4CAF50;
+        border-radius: 10px;
+    }
+
+    .main-container {
+        margin-top: 0px;
+    }
+
+    .container{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .page-title, .game-title {
+        display: none;
+    }
+}
