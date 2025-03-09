@@ -1,0 +1,55 @@
+
+.Serviços {
+    background-color: #161c14;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    justify-content: center;
+    gap: 20px;
+    color: #ffffff;
+}
+
+.Serviço-iten{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+   
+    
+}
+
+.inten {
+    color: #ffffff;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+       
+       
+}
+.inten span {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.inten a {
+    color: #A8A8A8;
+    background-color: transparent;
+    border-radius: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-width: 1px;
+    border-style: solid;
+    font-size:clamp(1.5rem, 0.5vw, 1rem);
+    text-decoration: none;
+    transition: background-color .3s ease ;
+    border-color: #A8A8A8;
+}
+
+
+.link a {
+    color: #ffffff;
+    padding: 10px;
+    
+}

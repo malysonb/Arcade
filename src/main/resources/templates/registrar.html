@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar</title>
+</head>
+<body>
+    <h1>Registre-se</h1>
+    <form th:action="@{/registrar}" th:object="${user}" method="post">
+        <label for="nome">Nome: </label>
+        <input type="text" th:field="*{nome}"/><br/>
+        <label for="username">Login: </label>
+        <input type="text" id="username" name="username" th:field="*{login}" autofocus="autofocus"/><br/>
+        <label for="email">e-Mail: </label>
+        <input type="email" name="email" id="email" th:field="*{email}"><br/>
+        <label for="password">Senha: </label>
+        <input type="password" name="password" id="password" th:field="*{senha}"/><br/>
+        <input type="submit" value="Cadastrar-se"/>
+    </form>
+</body>
+</html>
